@@ -17,3 +17,6 @@ Imports:
     tibble,
     tidyr,
     utils
+Depends: 
+    R (>= 3.5)
+LazyData: true
