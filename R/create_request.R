@@ -1,5 +1,8 @@
 #' Create requests to retrieve covers from the Discogs API
 #'
+#' @description
+#' Create the requests to subsequently retrieve album covers from the Discogs API via \link[covRflow]{retrieve_covers_discogs}.
+#'
 #' @param data A tibble with the following columns: \itemize{
 ##'  \item{`release_title`} {The title of the release, for example an album title.}
 ##'  \item{`artist`} {The artist who created the release.}

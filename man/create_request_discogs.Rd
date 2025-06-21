@@ -20,7 +20,7 @@ create_request_discogs(data, access_token)
 A tibble with a new list column called \code{request}.
 }
 \description{
-Create requests to retrieve covers from the Discogs API
+Create the requests to subsequently retrieve album covers from the Discogs API via \link[covRflow]{retrieve_covers_discogs}.
 }
 \examples{
 \dontrun{
