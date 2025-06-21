@@ -4,10 +4,10 @@
 #' Create the requests to subsequently retrieve album covers from the Discogs API via \link[covRflow]{retrieve_covers_discogs}.
 #'
 #' @param data A tibble with the following columns: \itemize{
-##'  \item{`release_title`} {The title of the release, for example an album title.}
-##'  \item{`artist`} {The artist who created the release.}
-##'  \item{`year`} {The year of the release.}
-##'  \item{`format`} {The format of the release. Examples include "album", "LP", "CD", "Vinyl".}
+##'  \item`release_title` The title of the release, for example an album title.
+##'  \item`artist` The artist who created the release.
+##'  \item`year` The year of the release.
+##'  \item`format` The format of the release. Examples include "album", "LP", "CD", "Vinyl".
 ##' } See \link[covRflow]{example_albums} to get some inspiration.
 #' @param access_token A string containing your Discogs API token. Unfortunately, you have to identify yourself with your personal token to use the functionality necessery to search for album covers. If you do not have a token yet, go to <https://www.discogs.com/settings/developers> and sign in to your Discogs account (or create a new one for free) and click on "Generate new token".
 #'
