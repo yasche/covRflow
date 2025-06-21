@@ -13,7 +13,7 @@ discogs_url_query_helper <- function(item) {
   }
 }
 
-discogs_create_request <- function(release_title, artist, year, access_token) {
+discogs_create_request <- function(release_title, artist, year, format, access_token) {
   httr2::request("https://api.discogs.com") |>
     httr2::req_url_path_append("database/search") |>
     httr2::req_user_agent(build_user_agent_str()) |>
@@ -23,7 +23,7 @@ discogs_create_request <- function(release_title, artist, year, access_token) {
     httr2::req_url_query(release_title = discogs_url_query_helper(release_title),
                          artist = discogs_url_query_helper(artist),
                          year = discogs_url_query_helper(year),
-                         format = "album") |>
+                         format = discogs_url_query_helper(format)) |>
     httr2::req_method("GET")
 }
 
@@ -53,3 +53,20 @@ discogs_community_to_tibble <- function(value) {
   )
 }
 
+retrieve_end_message <- function(data) {
+  n_not_found <- sum(is.na(data$cover_image))
+
+  if (n_not_found == 0) {
+    rlang::inform("All covers were successfully retrieved!")
+  } else {
+    n_total <- nrow(data)
+
+    not_found <- data |>
+      dplyr::filter(is.na(.data$cover_image)) |>
+      dplyr::select("release_title", "artist", "year", "format")
+
+    rlang::inform(paste0("For ", n_not_found, " of ", n_total, " entries, no cover was found:"))
+    print(not_found)
+  }
+
+}

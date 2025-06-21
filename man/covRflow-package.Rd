@@ -4,12 +4,12 @@
 \name{covRflow-package}
 \alias{covRflow}
 \alias{covRflow-package}
-\title{covRflow: What the Package Does (One Line, Title Case)}
+\title{covRflow: Recreation of the Famous Album Cover Flow in R}
 \description{
-What the package does (one paragraph).
+Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the viewer pane. Currently only the Discogs API \url{https://www.discogs.com/developers/#} is supported. Honestly just an excuse to play around with the Discogs API and to get to know the Viewer pane.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com}
+\strong{Maintainer}: Yannik Schermer \email{first.last@example.com}
 
 }
 \keyword{internal}
