@@ -2,5 +2,6 @@
 
 export(create_request_discogs)
 export(retrieve_covers_discogs)
+export(view_apache_license)
 importFrom(rlang,.data)
 importFrom(rlang,.env)
