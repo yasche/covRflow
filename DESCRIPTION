@@ -1,9 +1,9 @@
 Package: covRflow
-Title: Recreation of the Famous Album Cover Flow in R
+Title: Easily Retrieve Album Covers and Display them in the Style of the Famous Cover Flow
 Version: 0.0.0.9000
 Authors@R: 
     person("Yannik", "Schermer", , "first.last@example.com", role = c("aut", "cre"))
-Description: Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the viewer pane. Currently only the Discogs API <https://www.discogs.com/developers/#> is supported. Honestly just an excuse to play around with the Discogs API and to get to know the Viewer pane.
+Description: Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the viewer pane. Currently only the Discogs API <https://www.discogs.com/developers/#> is supported. Honestly just an excuse to play around with the Discogs API and the Viewer pane.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
