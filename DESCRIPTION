@@ -22,3 +22,5 @@ Imports:
 Depends: 
     R (>= 3.5)
 LazyData: true
+URL: https://github.com/yasche/covRflow
+BugReports: https://github.com/yasche/covRflow/issues
