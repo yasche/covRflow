@@ -9,7 +9,7 @@
 Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the viewer pane. Currently only the Discogs API \url{https://www.discogs.com/developers/#} is supported. Honestly just an excuse to play around with the Discogs API and the Viewer pane.
 }
 \author{
-\strong{Maintainer}: Yannik Schermer \email{first.last@example.com}
+\strong{Maintainer}: Yannik Schermer \email{mail@yannik.science}
 
 }
 \keyword{internal}
