@@ -4,8 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Yannik", "Schermer", , "mail@yannik.science", role = c("aut", "cre"))
 Description: Retrieve music cover artworks from a web Application Programming Interface (API) and use them to create an interactive display in the Viewer pane in the style of the famous cover flow. Currently only the 'Discogs' API <https://www.discogs.com/developers/#> is supported. Honestly just an excuse to play around with the 'Discogs' API and the Viewer pane.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
