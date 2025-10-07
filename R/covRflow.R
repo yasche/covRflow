@@ -1,3 +1,21 @@
+#' Display album covers in the Viewer pane
+#'
+#' @description
+#' Creates the interactive cover flow-esque display of album covers in the Viewer pane.
+#'
+#'
+#' @param data A tibble with the following necessary columns: `release_title` (title of the release), `artist` (artist) and `cover_image` (URL to an image of the release cover image). The tibble can be created with \code{\link[covRflow]{retrieve_covers_discogs}}. See examples for more details.
+#'
+#' @returns The function does not have a return value.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' example_albums |>
+#'   create_request_discogs(access_token = "thisisasecret") |>
+#'   retrieve_covers_discogs() |>
+#'   covRflow()
+#' }
 covRflow <- function(data) {
   rlang::inform("Original HTML, CSS and JavaScript code for the coverflow were written by Bramus (https://bram.us) for https://scroll-driven-animations.style/ and are licensed under Apache 2.0.\nType `view_apache_license()` to view the license.", .frequency = "once", .frequency_id = "apache_license_info")
 

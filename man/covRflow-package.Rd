@@ -2,11 +2,10 @@
 % Please edit documentation in R/covRflow-package.R
 \docType{package}
 \name{covRflow-package}
-\alias{covRflow}
 \alias{covRflow-package}
-\title{covRflow: Easily Retrieve Album Covers and Display them in the Style of the Famous Cover Flow}
+\title{covRflow: Easily Retrieve and Display Album Covers}
 \description{
-Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the viewer pane. Currently only the Discogs API \url{https://www.discogs.com/developers/#} is supported. Honestly just an excuse to play around with the Discogs API and the Viewer pane.
+Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the Viewer pane. Currently only the 'Discogs' API \url{https://www.discogs.com/developers/#} is supported. Honestly just an excuse to play around with the 'Discogs' API and the Viewer pane.
 }
 \seealso{
 Useful links:
