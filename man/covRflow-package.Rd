@@ -8,6 +8,14 @@
 \description{
 Retrieve album covers from a web Application Programming Interface (API) and use them to create a cover flow in the viewer pane. Currently only the Discogs API \url{https://www.discogs.com/developers/#} is supported. Honestly just an excuse to play around with the Discogs API and the Viewer pane.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/yasche/covRflow}
+  \item Report bugs at \url{https://github.com/yasche/covRflow/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Yannik Schermer \email{mail@yannik.science}
 
