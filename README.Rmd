@@ -15,42 +15,31 @@ knitr::opts_chunk$set(
 
 # covRflow
 
-  <!-- badges: start -->
-  [![R-CMD-check](https://github.com/yasche/covRflow/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/yasche/covRflow/actions/workflows/R-CMD-check.yaml)
-  <!-- badges: end -->
+<!-- badges: start --> [![R-CMD-check](https://github.com/yasche/covRflow/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/yasche/covRflow/actions/workflows/R-CMD-check.yaml) <!-- badges: end -->
 
-The goal of covRflow is to ...
+## Overview
+
+covRflow allows you to retrieve the URLs of music cover artworks via an Application Programming Interface (API) (currently only 'Discogs') and display them in the Viewer pane of RStudio in an interactive cover flow-esque style. The package was a fun project for getting to know the 'httr2' package and the workings of the mysterious Viewer pane in RStudio.
 
 ## Installation
 
 You can install the development version of covRflow from [GitHub](https://github.com/) with:
 
-```{r}
+```{r, message=FALSE}
 # install.packages("pak")
 pak::pak("yasche/covRflow")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Workflow for retrieving the URLs of the cover artworks and displaying them in the Viewer pane. 
 
-```{r example}
+*Note:* You need a personal access token to access the 'Discogs' API. You can create one for free on the 'Discogs' [developer page](https://www.discogs.com/settings/developers).
+
+```{r example, eval=FALSE}
 library(covRflow)
-## basic example code
+example_albums |>
+  create_request_discogs(access_token = "thisisasecret") |>
+  retrieve_covers_discogs() |>
+  covRflow()
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
