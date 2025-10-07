@@ -9,7 +9,7 @@
 ##'  \item`year` The year of the release.
 ##'  \item`format` The format of the release. Examples include "album", "LP", "CD", "Vinyl".
 ##' } See \link[covRflow]{example_albums} to get some inspiration.
-#' @param access_token A string containing your Discogs API token. Unfortunately, you have to identify yourself with your personal token to use the functionality necessery to search for album covers. If you do not have a token yet, go to <https://www.discogs.com/settings/developers> and sign in to your Discogs account (or create a new one for free) and click on "Generate new token".
+#' @param access_token A string containing your Discogs API token. Unfortunately, you have to identify yourself with your personal token to use the functionality necessary to search for album covers. If you do not have a token yet, go to <https://www.discogs.com/settings/developers> and sign in to your Discogs account (or create a new one for free) and click on "Generate new token".
 #'
 #' @returns A tibble with a new list column called `request`.
 #' @export

@@ -14,7 +14,7 @@ create_request_discogs(data, access_token)
 \item\code{format} The format of the release. Examples include "album", "LP", "CD", "Vinyl".
 } See \link[covRflow]{example_albums} to get some inspiration.}
 
-\item{access_token}{A string containing your Discogs API token. Unfortunately, you have to identify yourself with your personal token to use the functionality necessery to search for album covers. If you do not have a token yet, go to \url{https://www.discogs.com/settings/developers} and sign in to your Discogs account (or create a new one for free) and click on "Generate new token".}
+\item{access_token}{A string containing your Discogs API token. Unfortunately, you have to identify yourself with your personal token to use the functionality necessary to search for album covers. If you do not have a token yet, go to \url{https://www.discogs.com/settings/developers} and sign in to your Discogs account (or create a new one for free) and click on "Generate new token".}
 }
 \value{
 A tibble with a new list column called \code{request}.
